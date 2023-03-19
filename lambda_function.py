@@ -13,7 +13,8 @@ def lambda_handler(event, context):
     location = event['landmark']
     # defining a params dict for the parameters to be sent to the API
     PARAMS = {'address':location}
-    
+
+  # print(event)   
  
     # sending get request and saving the response as response object
     r = requests.get(url = URL, params = PARAMS)
